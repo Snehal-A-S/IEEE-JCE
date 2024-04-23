@@ -38,7 +38,7 @@ body{
     box-shadow: none !important;
 }
 
-
+/* home page styling */
 .heading{
     color: #6674cc !important;
     text-align: left;
@@ -50,7 +50,7 @@ body{
     padding: 3rem !important;  
 }
 
-span{
+.span{
     color: #FF8911;
 }
 
@@ -155,13 +155,9 @@ span{
     align-items: space-evenly;
 }
 
-
-
-
-
 /* card */
 
-.teamh,.wieteamh{
+.teamh,.wieteamh,.execomh{
     padding-top: 30px;
     padding-bottom: 40px;
     color: #6674cc !important;
@@ -186,6 +182,36 @@ span{
     padding: 0px 46.8px !important;
 }
 
+.execom_card{
+    border: none !important;
+    background-color: #074173 !important;
+}
+
+.execom_img{
+    border-radius: 100% !important;
+    
+}
+
+.d_img{
+    width: 288px;
+    height: 276.89px;
+}
+
+.execom{
+    background-color: #074173;
+    width: 100% !important;
+    padding-top: 3rem;
+}
+
+.card_prof_title{
+    color:white !important;
+}
+
+.card_prof_text{
+    color: #dddddd;
+}
+
+/* home page card */
 .h_img{
     height : 10rem !important;
     border-radius: inherit !important;
