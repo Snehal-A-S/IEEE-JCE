@@ -221,3 +221,80 @@ body{
 .h_card{
     border: solid 2px !important;
 }
+
+
+/* wie page */
+
+.wie_page{
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    height: 600px;
+    background-color : #E1AFD1;
+    margin-bottom: 3rem;
+}
+
+.wie_img{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 8rem;
+    margin-left: 6rem;
+}
+
+.Wie_h{
+    color: white;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 14rem;
+    margin-left: 6rem;
+   
+}
+
+.wie_para,.wie_list{
+    font-size: 1.5rem;
+    text-align: justify;
+    text-align-last: left;
+    line-height: 1.5;
+    padding: 0 3rem ;
+}
+
+.wie_list{
+    padding-left: 5rem !important;
+}
+
+.wie_li{
+    padding-bottom: 1.5rem;
+}
+
+@media(max-width:576px){
+    .wie_page{
+        flex-wrap: wrap !important;
+        
+    }
+    .wie_img{
+        text-align: center;
+        width: 300px;
+        height: 200px;
+        margin-right: 3rem;
+        margin-left : 3rem ;
+    }
+    .Wie_h{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        line-height: 3rem; 
+    }
+    .wie_para,.wie_list{
+        font-size: 1rem !important;
+        padding: 0 2rem !important;
+    }
+    .wie_list{
+        padding-left: 3rem !important;
+    }
+}
