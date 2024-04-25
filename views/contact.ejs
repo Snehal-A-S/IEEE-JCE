@@ -20,7 +20,7 @@
         </div>
         <div class="mb-3">
             <label for="phone" class="form-label">Phone No.</label>
-            <input type="number" name="phone" placeholder="Enter Phone No." class="form-control" required>
+            <input type="text" name="phone" placeholder="Enter Phone No." class="form-control" oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)" required>
             <div class="invalid-feedback">
                 Phone Enter your Phone no.
             </div>
