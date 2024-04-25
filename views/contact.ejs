@@ -1,4 +1,40 @@
 <% layout('layouts/boilerplate') -%>
-<body>
-    <h1>Contact Us</h1>
+<body class="contact_body">
+    <div class="contact">
+    <h1 class="contacth">Connect with us</h1>
+    
+    <form method="POST" action="/contact"  class="needs-validation" novalidate >
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name" class="form-control" required >
+            <div class="invalid-feedback">
+                Please Enter Your Name.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email" class="form-control" required>
+            <div class="invalid-feedback">
+                Please Enter your Email.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone No.</label>
+            <input type="text" name="phone" placeholder="Enter Phone No." class="form-control" required>
+            <div class="invalid-feedback">
+                Phone Enter your Phone no.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Message" class="form-label">How Can we help you?</label>
+            <textarea name="Message"  cols="30" rows="4" class="form-control" required></textarea>
+            <div class="invalid-feedback">
+                Please fill out this field.
+            </div>
+        </div>
+       
+        <button class="btn btn-dark send-btn">Send Message</button>
+        <br>
+    </form>
+</div>
 </body>
