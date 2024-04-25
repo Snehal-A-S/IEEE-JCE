@@ -146,7 +146,7 @@ body{
 .f-info{
     height: 8rem;
     width: 100% !important;
-    text-align: center;
+    /* text-align: center; */
     background-color: #61a5c2;
     display:flex;
     flex-wrap: wrap;
