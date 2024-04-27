@@ -115,6 +115,7 @@ body{
     .heading,.heading_2,.heading_3{
         padding: 0 2rem !important;
     }
+    
 }
 
 .abt_para{
@@ -147,7 +148,8 @@ body{
     height: 8rem;
     width: 100% !important;
     /* text-align: center; */
-    background-color: #61a5c2;
+    background-color: #074173;
+    color: white;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -163,13 +165,13 @@ body{
     text-align: center;
 }
 
-.card{
+.team_card{
     /* border : none !important; */
     border-radius: 1rem !important;
     text-align: center;
 }
 
-.card-img-top{
+.team_img{
     height: 300px;
     /* border-radius: 1rem !important; */
     width: 100% !important;
@@ -383,4 +385,51 @@ body{
     transform: translateX(-50%);
     background-color: #6674cc !important;
     border: none !important;
+}
+
+/* event page */
+
+.event_card{
+    width: 27rem;
+
+}
+
+.event_img{
+    height: 20rem;
+}
+
+.event_div{
+    margin-top: 3rem !important;
+}
+
+/* show page  */
+
+.poster_img{
+    width: 600px;
+    height: 400px;
+}
+
+.all_event_img{
+    height: 100%;
+    
+}
+
+.card_allevent{
+    border: none !important;
+    text-align: center;
+    object-fit: cover !important;
+}
+
+.eventh{
+    margin: 2rem 0;
+}
+
+.grid{
+    padding: 0 1rem !important;
+}
+
+@media(max-width:1000px){
+    .grid{
+        padding: 0 !important;
+    }
 }

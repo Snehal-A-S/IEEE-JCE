@@ -5,6 +5,19 @@ const path = require("path");
 const ejsmate = require("ejs-mate");
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const mongoose = require("mongoose");
+const Event = require("./models/event.js");
+
+
+const dburl = process.env.MONGO_ATLAS;
+main().then(()=>{
+    console.log("Connected to db");
+})
+.catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect(dburl);
+}
 
 
 app.set("view engine","ejs");
@@ -25,8 +38,16 @@ app.get("/team",(req,res)=>{
     res.render("team.ejs");
 })
 
-app.get("/events",(req,res)=>{
-    res.render("events.ejs");
+app.get("/events",async(req,res)=>{
+    let alldata = await Event.find();
+    res.render("events.ejs",{alldata});
+})
+
+//show events route
+app.get("/events/:id",async(req,res)=>{
+    let {id} = req.params;
+    const event = await Event.findById(id);
+    res.render("show.ejs",{event});
 })
 
 app.get("/Wie",(req,res)=>{

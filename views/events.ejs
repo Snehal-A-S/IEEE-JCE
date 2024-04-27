@@ -1,4 +1,25 @@
 <% layout('layouts/boilerplate') -%>
-<body>
-    <h1>Events</h1>
+<body class="event_body">
+    
+    <div class="container d-flex justify-content-center">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 event_div">
+            <%for(events of alldata){%>
+            <div class="col">
+              <div class="card h-100 event_card ">
+                <img src="/poster/<%= events.eventPoster %>" class="card-img-top event_img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= events.eventName %></h5>
+                  <p class="card-text"><i class="fa-regular fa-calendar"></i>&ThickSpace; <%= events.eventDate %></p>
+                  <a href="/events/<%= events._id %>">
+                  <button class="btn btn-dark">Learn more</button></a>
+                </div>
+              </div>
+            </div>
+            <%} %>
+            </div>
+            </div>
+    
+
 </body>
+
+
