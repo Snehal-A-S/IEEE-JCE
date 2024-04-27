@@ -389,6 +389,10 @@ body{
 
 /* event page */
 
+.event_page{
+    overflow: hidden;
+}
+
 .event_card{
     width: 27rem;
 
@@ -403,6 +407,10 @@ body{
 }
 
 /* show page  */
+
+.show_page{
+    overflow-x: hidden;
+}
 
 .poster_img{
     width: 600px;
