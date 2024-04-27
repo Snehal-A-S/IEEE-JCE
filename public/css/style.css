@@ -182,10 +182,16 @@ ul{
 @media(max-width:800px){
     .footer_div{
         flex: 1 0 100%;
-        margin-bottom: 1rem;
+        margin-bottom:0;
     }
     .f_content{
         padding-left: 2rem;
+    }
+    .footerh{
+        padding: 0 !important;
+    }
+    .f-info-socials i{
+        font-size: 2rem;
     }
 }
 
