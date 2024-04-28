@@ -1,11 +1,12 @@
 <% layout('layouts/boilerplate') -%>
 <body class="event_body">
   <div class="event_page">  
-    <div class="container d-flex justify-content-center">
-        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 event_div">
+    <div class=" d-flex justify-content-center ">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 event_row">
             <%for(events of alldata){%>
-            <div class="col">
-              <div class="card h-100 event_card ">
+            <div class="col ">
+              <div class="d-flex justify-content-center h-100">
+              <div class="card h-100 event_card " style="width:25rem;">
                 <img src="/poster/<%= events.eventPoster %>" class="card-img-top event_img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><%= events.eventName %></h5>
@@ -15,6 +16,7 @@
                 </div>
               </div>
             </div>
+          </div>
             <%} %>
         </div>
     </div>

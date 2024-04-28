@@ -217,7 +217,7 @@ ul{
     object-fit: cover !important;
 }
 
-.col{
+.col-item{
     margin-bottom: 2rem;
     padding: 0px 46.8px !important;
 }
@@ -225,6 +225,7 @@ ul{
 .execom_card{
     border: none !important;
     background-color: #074173 !important;
+    text-align: center;
 }
 
 .execom_img{
@@ -432,17 +433,8 @@ ul{
     overflow: hidden;
 }
 
-.event_card{
-    width: 27rem;
-
-}
-
-.event_img{
-    height: 20rem;
-}
-
-.event_div{
-    margin-top: 3rem !important;
+.event_row{
+    margin: 2rem 0 !important;
 }
 
 /* show page  */
@@ -451,20 +443,14 @@ ul{
     overflow-x: hidden;
 }
 
-.poster_img{
-    width: 600px;
-    height: 400px;
-}
 
-.all_event_img{
-    height: 100%;
-    
-}
+
 
 .card_allevent{
     border: none !important;
     text-align: center;
     object-fit: cover !important;
+    margin: 0 2rem;
 }
 
 .eventh{
