@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "20.x"
+    "node": "20.11.0"
   },
   "name": "ieee_jce",
   "version": "1.0.0",
